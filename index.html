@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shape Generator</title>
     <link rel="stylesheet" href="./assets/style/index.css" media="all">
-    <script src="./assets/script/index.js" defer></script>
-    <script src="./assets/script/classes.js" defer></script>
+    <script src="./assets/script/index.js" type="module"></script>
 </head>
 <body>
     <div class="container flexbox">
         <form>
             <select name="shape selector" class="shape-selector">
-                <option>Circle</option>
-                <option>Square</option>
+                <option value="circle">Circle</option>
+                <option value="square">Square</option>
             </select>
             <select name="color selector" class="color-selector">
-                <option value="800080">Purple</option>
-                <option value="ffa500">Orange</option>
-                <option value="ff0000">Red</option>
+                <option value="purple">Purple</option>
+                <option value="orange">Orange</option>
+                <option value="red">Red</option>
             </select>
             <button type="button" class="create-button">CREATE</button>
         </form>

@@ -18,3 +18,5 @@ class Shape {
         return `Shape: ${this._name}, Color: ${this._color}`;
     }
 }
+
+export { Shape }
