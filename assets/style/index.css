@@ -45,7 +45,6 @@ form {
     padding: 1em;
     display: flex;
     flex-wrap: wrap;
-    /*grid-template-columns: repeat(auto-fill, minmax(51px, 1em));*/
     gap: 8px;
     transform: rotateX(180deg);
 }
