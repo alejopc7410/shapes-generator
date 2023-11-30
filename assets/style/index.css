@@ -43,8 +43,9 @@ form {
     border-radius: 8px;
     border: 1px solid #675555;
     padding: 1em;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(51px, 1em));
+    display: flex;
+    flex-wrap: wrap;
+    /*grid-template-columns: repeat(auto-fill, minmax(51px, 1em));*/
     gap: 8px;
     transform: rotateX(180deg);
 }
