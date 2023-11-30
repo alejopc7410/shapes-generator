@@ -27,7 +27,17 @@ const advice = select('.flexbox p');
 
 const shapes = [];
 
+function selectValidation() {
+    if (shapeSelect.value === "" || colorSelect.value === "") {
+        return false;
+    } else {
+        return true;
+    }
+}
+console.log(selectValidation())
 function createShape() {
+    if (!selectValidation()) return false;
+
     const shapeDiv = document.createElement('div');
     let shapeValue = shapeSelect.value;
     let colorValue = colorSelect.value;
