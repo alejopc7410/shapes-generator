@@ -19,3 +19,5 @@ The Shape Generator is a simple tool that allows you to create and display diffe
 - Use the dropdown menus to select the shape type (circle or square) and the color.
 - Click the "Create" button to generate a new shape.
 - Each shape is displayed on the grid. Click on a shape to view information about it.
+
+Clikc [Here](https://alejopc7410.github.io/shapes-generator/) to access
