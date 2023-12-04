@@ -16,7 +16,7 @@ function onEvent (selector, event, callback) {
 
 /*------------------------------------------*/
 
-import { Shape } from './classes.js'
+import { Shape } from './Shapes.js'
 
 const shapeSelect = select('.shape-selector');
 const colorSelect = select('.color-selector');
