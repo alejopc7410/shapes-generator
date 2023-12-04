@@ -22,8 +22,8 @@ const shapeSelect = select('.shape-selector');
 const colorSelect = select('.color-selector');
 const createBtn = select('.create-button');
 const shapeOutput = select('.output-shapes');
-const shapesInfo = selectAll('[data-dynamic="true"]');
 const advice = select('.flexbox p');
+let shapeNumber = 0;
 
 const shapes = [];
 
@@ -34,7 +34,7 @@ function selectValidation() {
         return true;
     }
 }
-console.log(selectValidation())
+
 function createShape() {
     if (!selectValidation()) return false;
 
@@ -42,13 +42,15 @@ function createShape() {
     let shapeValue = shapeSelect.value;
     let colorValue = colorSelect.value;
     
-
+    shapeNumber++
     if (shapes.length < 45) {
+        shapeDiv.setAttribute("data-number", shapeNumber);
+        const number = shapeDiv.getAttribute("data-number");
         const newShape = new Shape (shapeValue, colorValue);
         shapes.push(newShape);
         shapeDiv.className = `shape ${shapeValue} ${colorValue}`;
         shapeOutput.appendChild(shapeDiv); 
-        shapeDiv.addEventListener('click', () => advice.textContent = `${newShape.getInfo()}`);
+        shapeDiv.addEventListener('click', () => advice.innerHTML = `${newShape.getInfo()} <br> Shape No.: &nbsp;&nbsp;${number}`);
     } else {
         advice.textContent = 'You have reached the maximum number of shapes!';
     }
